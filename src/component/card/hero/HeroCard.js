@@ -17,14 +17,16 @@ const HeroCardContainer = styled.div`
 const HeroCard = ({theme, title, type, image, description, health, playerIcon, treasureTypes, wound}) => {
 	const heroCardTheme = theme.cards.hero
 
-	return <Card theme={heroCardTheme} >
-		<HeroCardContainer theme={heroCardTheme} >
-			<Header title={title} theme={heroCardTheme.header} />
-			<Image theme={heroCardTheme.image} image={image} />
-			<Description theme={heroCardTheme.description} description={description} />
-			<Footer theme={heroCardTheme.footer} health={health} playerIcon={playerIcon} treasureTypes={treasureTypes} wound={wound} />
-		</HeroCardContainer>
-	</Card>
+	return (
+		<Card theme={heroCardTheme} >
+			<HeroCardContainer theme={heroCardTheme} >
+				<Header title={title} theme={heroCardTheme.header} />
+				<Image theme={heroCardTheme.image} image={image} />
+				<Description theme={heroCardTheme.description} description={description} />
+				<Footer theme={heroCardTheme.footer} health={health} playerIcon={playerIcon} treasureTypes={treasureTypes} wound={wound} />
+			</HeroCardContainer>
+		</Card>
+	)
 }
 
 export default HeroCard

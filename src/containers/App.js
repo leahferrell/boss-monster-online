@@ -1,11 +1,11 @@
 import React from 'react'
-import GameTable from './GameTable'
+import GameTable from '../component/layout/GameTable'
 import GlobalStyle from '../config/global-style'
 import config from '../config/config'
-import bossRepo from "../api/repo/boss-repo";
-import roomRepo from "../api/repo/room-repo";
-import spellRepo from "../api/repo/spells-repo";
-import heroRepo from "../api/repo/hero-repo";
+import bossRepo from "../service/repo/boss-repo";
+import roomRepo from "../service/repo/room-repo";
+import spellRepo from "../service/repo/spells-repo";
+import heroRepo from "../service/repo/hero-repo";
 
 const initPlayer = () => {
 	return {

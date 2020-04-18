@@ -17,10 +17,12 @@ const DescriptionText = styled.p`
 `
 
 const Description = ({theme, levelUp}) => {
-	return <DescriptionContainer theme={theme}>
-		<DescriptionText>Level Up:</DescriptionText>
-		<DescriptionText>{levelUp}</DescriptionText>
-	</DescriptionContainer>
+	return (
+		<DescriptionContainer theme={theme}>
+			<DescriptionText>Level Up:</DescriptionText>
+			<DescriptionText>{levelUp}</DescriptionText>
+		</DescriptionContainer>
+	)
 }
 
 export default Description

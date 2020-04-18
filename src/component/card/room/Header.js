@@ -32,10 +32,12 @@ const Subtitle = styled.h3`
 `
 
 const Header = ({theme, title, type, isAdvanced}) => {
-	return <HeaderContainer theme={theme}>
-		<Title theme={theme}>{title}</Title>
-		<Subtitle theme={theme}>{generateSubtitle(type, isAdvanced)}</Subtitle>
-	</HeaderContainer>
+	return (
+		<HeaderContainer theme={theme}>
+			<Title theme={theme}>{title}</Title>
+			<Subtitle theme={theme}>{generateSubtitle(type, isAdvanced)}</Subtitle>
+		</HeaderContainer>
+	)
 }
 
 export default Header

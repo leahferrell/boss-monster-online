@@ -27,10 +27,12 @@ const Subtitle = styled.h3`
 `
 
 const Header = ({theme, name, title}) => {
-	return <HeaderContainer theme={theme}>
-		<Title theme={theme}>{name}</Title>
-		<Subtitle theme={theme}>{title}</Subtitle>
-	</HeaderContainer>
+	return (
+		<HeaderContainer theme={theme}>
+			<Title theme={theme}>{name}</Title>
+			<Subtitle theme={theme}>{title}</Subtitle>
+		</HeaderContainer>
+	)
 }
 
 export default Header

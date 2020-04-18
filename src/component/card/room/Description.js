@@ -17,9 +17,11 @@ const DescriptionText = styled.p`
 `
 
 const Description = ({theme, description}) => {
-	return <DescriptionContainer theme={theme}>
-		{description.map((l, i) => <DescriptionText key={i}>{l}</DescriptionText>)}
-	</DescriptionContainer>
+	return (
+		<DescriptionContainer theme={theme}>
+			{description.map((l, i) => <DescriptionText key={i}>{l}</DescriptionText>)}
+		</DescriptionContainer>
+	)
 }
 
 export default Description

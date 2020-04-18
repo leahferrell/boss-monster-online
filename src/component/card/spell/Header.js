@@ -19,9 +19,11 @@ const Title = styled.h2`
 `
 
 const Header = ({theme, title}) => {
-	return <HeaderContainer theme={theme}>
-		<Title theme={theme}>{title}</Title>
-	</HeaderContainer>
+	return (
+		<HeaderContainer theme={theme}>
+			<Title theme={theme}>{title}</Title>
+		</HeaderContainer>
+	)
 }
 
 export default Header

@@ -17,9 +17,11 @@ const DescriptionText = styled.p`
 `
 
 const Description = ({theme, description}) => {
-	return <DescriptionContainer theme={theme}>
-		<DescriptionText>{description}</DescriptionText>
-	</DescriptionContainer>
+	return (
+		<DescriptionContainer theme={theme}>
+			<DescriptionText>{description}</DescriptionText>
+		</DescriptionContainer>
+	)
 }
 
 export default Description

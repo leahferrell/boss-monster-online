@@ -21,11 +21,13 @@ const EmptyText = styled.p`
 const EmptyCard = ({theme, placeholder}) => {
 	const emptyCardTheme = theme.cards.empty
 
-	return <EmptyCardTemplate theme={emptyCardTheme} >
-		<EmptyText>
-			{placeholder}
-		</EmptyText>
-	</EmptyCardTemplate>
+	return (
+		<EmptyCardTemplate theme={emptyCardTheme} >
+			<EmptyText>
+				{placeholder}
+			</EmptyText>
+		</EmptyCardTemplate>
+	)
 }
 
 export default EmptyCard

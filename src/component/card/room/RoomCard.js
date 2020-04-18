@@ -17,14 +17,16 @@ const RoomCardContainer = styled.div`
 const RoomCard = ({theme, title, type, isAdvanced, image, description, baseDamage, treasureValue}) => {
 	const roomCardTheme = theme.cards.room
 
-	return <Card theme={roomCardTheme} >
-		<RoomCardContainer theme={roomCardTheme} >
-			<Header isAdvanced={isAdvanced} title={title} type={type} theme={roomCardTheme.header} />
-			<Image theme={roomCardTheme.image} image={image} />
-			<Description theme={roomCardTheme.description} description={description} />
-			<Footer theme={roomCardTheme.footer} baseDamage={baseDamage} treasureValue={treasureValue} />
-		</RoomCardContainer>
-	</Card>
+	return (
+		<Card theme={roomCardTheme} >
+			<RoomCardContainer theme={roomCardTheme} >
+				<Header isAdvanced={isAdvanced} title={title} type={type} theme={roomCardTheme.header} />
+				<Image theme={roomCardTheme.image} image={image} />
+				<Description theme={roomCardTheme.description} description={description} />
+				<Footer theme={roomCardTheme.footer} baseDamage={baseDamage} treasureValue={treasureValue} />
+			</RoomCardContainer>
+		</Card>
+	)
 }
 
 export default RoomCard
