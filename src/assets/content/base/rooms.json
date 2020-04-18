@@ -1,0 +1,365 @@
+{
+  "rooms": [
+	{
+	  "title": "Zombie Prison",
+	  "type": "Monster",
+	  "is-advanced": false,
+	  "image": "zombie-prison.png",
+	  "description": [
+		"Destroy this Room:",
+		"Choose a dead Hero in an opponent's scorekeeping area. Send it back to the entrance of that player's dungeon."
+	  ],
+	  "base-damage": 1,
+	  "treasure-value": ["cleric", "mage"],
+	  "count": 3
+	},
+	{
+	  "title": "Jackpot Stash",
+	  "type": "Trap",
+	  "is-advanced": false,
+	  "image": "jackpot-stash.png",
+	  "description": [
+		"You may destroy this Room to double the treasure value of your dungeon's Rooms until end of turn."
+	  ],
+	  "base-damage": 1,
+	  "treasure-value": ["thief", "thief"],
+	  "count": 3
+	},
+	{
+	  "title": "Golem Factory",
+	  "type": "Monster",
+	  "is-advanced": false,
+	  "image": "golem-factory.png",
+	  "description": [
+		"Once per turn, if a Hero dies in this Room, draw a Room card."
+	  ],
+	  "base-damage": 2,
+	  "treasure-value": ["fighter"],
+	  "count": 6
+	},
+	{
+	  "title": "Witch's Kitchen",
+	  "type": "Monster",
+	  "is-advanced": false,
+	  "image": "witchs-kitchen.png",
+	  "description": [
+		"Once per turn, you may discard a Monster Room card to draw a Spell card."
+	  ],
+	  "base-damage": 1,
+	  "treasure-value": ["mage"],
+	  "count": 3
+	},
+	{
+	  "title": "Specter's Sanctum",
+	  "type": "Monster",
+	  "is-advanced": false,
+	  "image": "specters-sanctum.png",
+	  "description": [
+		"When you build this Room, choose an opponent. That opponent discards a random Spell card."
+	  ],
+	  "base-damage": 2,
+	  "treasure-value": ["cleric"],
+	  "count": 3
+	},
+	{
+	  "title": "Dark Altar",
+	  "type": "Trap",
+	  "is-advanced": false,
+	  "image": "dark-altar.png",
+	  "description": [
+		"You may destroy this Room to choose one card from the discard pile and put it into your hand."
+	  ],
+	  "base-damage": 1,
+	  "treasure-value": ["cleric", "cleric"],
+	  "count": 3
+	},
+	{
+	  "title": "Succubus Spa",
+	  "type": "Monster",
+	  "is-advanced": false,
+	  "image": "succubus-spa.png",
+	  "description": [
+		"Once per turn, if a Hero dies in this Room, choose an opponent. Take a random Room or Spell card from that opponent's hand."
+	  ],
+	  "base-damage": 1,
+	  "treasure-value": ["cleric"],
+	  "count": 3
+	},
+	{
+	  "title": "Bottomless Pit",
+	  "type": "Trap",
+	  "is-advanced": false,
+	  "image": "bottomless-pit.png",
+	  "description": [
+		"You may destroy this Room to kill a Hero in this Room."
+	  ],
+	  "base-damage": 1,
+	  "treasure-value": ["thief"],
+	  "count": 3
+	},
+	{
+	  "title": "Haunted Library",
+	  "type": "Trap",
+	  "is-advanced": false,
+	  "image": "haunted-library.png",
+	  "description": [
+		"At the beginning of your turn, you may draw from the Spell deck instead of the Room deck."
+	  ],
+	  "base-damage": 1,
+	  "treasure-value": ["mage"],
+	  "count": 2
+	},
+	{
+	  "title": "Recycling Center",
+	  "type": "Trap",
+	  "is-advanced": true,
+	  "image": "recycling-center.png",
+	  "description": [
+		"When another Room in your dungeon is destroyed, you may draw two Room cards."
+	  ],
+	  "base-damage": 3,
+	  "treasure-value": ["thief"],
+	  "count": 2
+	},
+	{
+	  "title": "Monstrous Monument",
+	  "type": "Trap",
+	  "is-advanced": false,
+	  "image": "monstrous-monument.png",
+	  "description": [
+		"When you build this Room, choose one Monster Room from the discard pile and put it in your hand."
+	  ],
+	  "base-damage": 1,
+	  "treasure-value": ["cleric","fighter"],
+	  "count": 2
+	},
+	{
+	  "title": "Dark Laboratory",
+	  "type": "Trap",
+	  "is-advanced": false,
+	  "image": "dark-laboratory.png",
+	  "description": [
+		"When you build this Room, draw two Spell cards, then discard a Spell card."
+	  ],
+	  "base-damage": 1,
+	  "treasure-value": ["mage","mage"],
+	  "count": 3
+	},
+	{
+	  "title": "Construction Zone",
+	  "type": "Trap",
+	  "is-advanced": false,
+	  "image": "construction-zone.png",
+	  "description": [
+		"When you build this Room, you may immediately build an additional Room."
+	  ],
+	  "base-damage": 1,
+	  "treasure-value": ["fighter","thief"],
+	  "count": 2
+	},
+	{
+	  "title": "Dragon Hatchery",
+	  "type": "Monster",
+	  "is-advanced": false,
+	  "image": "dragon-hatchery.png",
+	  "description": [
+		"(This Room contains all four treasure types.)"
+	  ],
+	  "base-damage": 0,
+	  "treasure-value": ["cleric","fighter","mage","thief"],
+	  "count": 3
+	},
+	{
+	  "title": "The Crushinator",
+	  "type": "Trap",
+	  "is-advanced": true,
+	  "image": "crushinator.png",
+	  "description": [
+		"Once per turn, you may destroy another Room in your dungeon to give all your Rooms +2 until the end of turn."
+	  ],
+	  "base-damage": 2,
+	  "treasure-value": ["thief"],
+	  "count": 2
+	},
+	{
+	  "title": "Brainsucker Hive",
+	  "type": "Monster",
+	  "is-advanced": false,
+	  "image": "brainsucker-hive.png",
+	  "description": [
+		"Once per turn, if a Hero dies in this Room, you may draw a Spell card."
+	  ],
+	  "base-damage": 2,
+	  "treasure-value": ["mage"],
+	  "count": 3
+	},
+	{
+	  "title": "Dizzygas Hallway",
+	  "type": "Trap",
+	  "is-advanced": false,
+	  "image": "dizzygas-hallway.png",
+	  "description": [
+		"If the Room to the right of this one is a Trap room, it has +2"
+	  ],
+	  "base-damage": 1,
+	  "treasure-value": ["thief"],
+	  "count": 3
+	},
+	{
+	  "title": "Boulder Ramp",
+	  "type": "Trap",
+	  "is-advanced": false,
+	  "image": "boulder-ramp.png",
+	  "description": [
+		"You may destroy another Room in your dungeon to deal 5 damage to one Hero in this Room. (You may activate this multiple times per turn.)"
+	  ],
+	  "base-damage": 1,
+	  "treasure-value": ["thief"],
+	  "count": 2
+	},
+	{
+	  "title": "Centipede Tunnel",
+	  "type": "Monster",
+	  "is-advanced": false,
+	  "image": "centipede-tunnel.png",
+	  "description": [
+		"When you build this Room, you may swap the placement of two Rooms in any one dungeon."
+	  ],
+	  "base-damage": 1,
+	  "treasure-value": ["fighter","mage"],
+	  "count": 2
+	},
+	{
+	  "title": "Vampire Bordello",
+	  "type": "Monster",
+	  "is-advanced": true,
+	  "image": "vampire-bordello.png",
+	  "description": [
+		"Once per turn, if a Hero dies in this Room, you may heal one Wound. Flip over one face-up Hero, adding its soul value to your total."
+	  ],
+	  "base-damage": 3,
+	  "treasure-value": ["cleric"],
+	  "count": 2
+	},
+	{
+	  "title": "Mimic Vault",
+	  "type": "Trap",
+	  "is-advanced": false,
+	  "image": "mimic-vault.png",
+	  "description": [
+		"When you build this Room, choose one ordinary Hero in town and place it at the entrance to your dungeon."
+	  ],
+	  "base-damage": 1,
+	  "treasure-value": ["mage","thief"],
+	  "count": 2
+	},
+	{
+	  "title": "Dracolich Lair",
+	  "type": "Monster",
+	  "is-advanced": true,
+	  "image": "dracolich-lair.png",
+	  "description": [
+		"Once per turn, you may discard two Room cards to choose one Room card from the discard pile and put it into your hand."
+	  ],
+	  "base-damage": 3,
+	  "treasure-value": ["cleric"],
+	  "count": 2
+	},
+	{
+	  "title": "Neanderthal Cave",
+	  "type": "Monster",
+	  "is-advanced": false,
+	  "image": "neanderthal-cave.png",
+	  "description": [
+		"You cannot build an Advanced Room on Neanderthal Cave."
+	  ],
+	  "base-damage": 3,
+	  "treasure-value": ["fighter"],
+	  "count": 3
+	},
+	{
+	  "title": "Torture Chamber",
+	  "type": "Trap",
+	  "is-advanced": false,
+	  "image": "torture-chamber.png",
+	  "description": [
+		"You may destroy this Room to choose an opponent to discard a random Room card."
+	  ],
+	  "base-damage": 1,
+	  "treasure-value": ["cleric","thief"],
+	  "count": 2
+	},
+	{
+	  "title": "Monster's Ballroom",
+	  "type": "Monster",
+	  "is-advanced": true,
+	  "image": "monsters-ballroom.png",
+	  "description": [
+		"This Room's damage is equal to the number of Monster Rooms in your dungeon."
+	  ],
+	  "base-damage": -1,
+	  "treasure-value": ["fighter"],
+	  "count": 2
+	},
+	{
+	  "title": "Open Grave",
+	  "type": "Trap",
+	  "is-advanced": false,
+	  "image": "open-grave.png",
+	  "description": [
+		"Once per turn, if a Hero dies in this Room, choose one Room card from the discard pile and put it into your hand."
+	  ],
+	  "base-damage": 2,
+	  "treasure-value": ["cleric"],
+	  "count": 2
+	},
+	{
+	  "title": "Liger's Den",
+	  "type": "Monster",
+	  "is-advanced": true,
+	  "image": "ligers-den.png",
+	  "description": [
+		"Once per turn when you play a Spell card, draw a Spell card."
+	  ],
+	  "base-damage": 2,
+	  "treasure-value": ["mage"],
+	  "count": 2
+	},
+	{
+	  "title": "Beast Menagerie",
+	  "type": "Monster",
+	  "is-advanced": true,
+	  "image": "beast-menagerie.png",
+	  "description": [
+		"Once per turn when you build another Monster Room, draw a Room card."
+	  ],
+	  "base-damage": 4,
+	  "treasure-value": ["fighter"],
+	  "count": 2
+	},
+	{
+	  "title": "All-Seeing Eye",
+	  "type": "Trap",
+	  "is-advanced": true,
+	  "image": "all-seeing-eye.png",
+	  "description": [
+		"Once per turn when an opponent plays a Spell card, you may discard a Spell card to cancel its effects."
+	  ],
+	  "base-damage": 3,
+	  "treasure-value": ["mage"],
+	  "count": 2
+	},
+	{
+	  "title": "Minotaur's Maze",
+	  "type": "Monster",
+	  "is-advanced": false,
+	  "image": "minotaurs-maze.png",
+	  "description": [
+		"The first time a Hero enters this Room, send it back to the previous Room."
+	  ],
+	  "base-damage": 0,
+	  "treasure-value": ["fighter"],
+	  "count": 2
+	}
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "bosses": [
+	{
+	  "name": "Seducia",
+	  "title": "Sorceress of Sexiness",
+	  "image": "seducia.png",
+	  "level-up": "You may search through town or the Hero decks, choose one Hero, and put it at the entrance to your dungeon.",
+	  "xp": 600,
+	  "treasure-types": [ "mage" ],
+	  "level-up-function": [
+		{
+		  "name": "search",
+		  "params": {
+			"decks": ["town","hero"],
+			"type": "hero",
+			"count": 1
+		  }
+		},
+		{
+		  "name": "placeAtDungeon",
+		  "params": {
+			"player": "self",
+			"hero": "$1"
+		  }
+		}
+	  ]
+	},
+	{
+	  "name": "Cerebellus",
+	  "title": "Father Brain",
+	  "image": "cerebellus.png",
+	  "level-up": "You may draw three Spell cards, then discard a Spell card.",
+	  "xp": 650,
+	  "treasure-types": [ "mage" ],
+	  "level-up-function": [
+		{
+		  "name": "draw",
+		  "params": {
+			"decks": ["spell"],
+			"count": 3
+		  }
+		},
+		{
+		  "name": "discard",
+		  "params": {
+			"player": "self",
+			"type": "spell",
+			"count": 1
+		  }
+		}
+	  ]
+	},
+	{
+	  "name": "Cleopatra",
+	  "title": "Mother of Mummies",
+	  "image": "cleopatra.png",
+	  "level-up": "Search the Room deck or discard pile for an Advanced Trap Room. You may immediately build the room (over a Room with a matching treasure type).",
+	  "xp": 850,
+	  "treasure-types": [ "thief" ],
+	  "level-up-function": [
+		{
+		  "name": "search",
+		  "params": {
+			"decks": ["room","discard"],
+			"type": "advanced-trap-room",
+			"count": 1
+		  }
+		},
+		{
+		  "name": "build",
+		  "params": {
+			"player": "self",
+			"room": "$1"
+		  }
+		}
+	  ]
+	},
+	{
+	  "name": "King Croak",
+	  "title": "Sultan of the Sewers",
+	  "image": "king-croak.png",
+	  "level-up": "Search the Room deck or discard pile for an Advanced Monster Room. You may immediately build the Room (over a Room with a matching treasure type).",
+	  "xp": 800,
+	  "treasure-types": [ "fighter" ],
+	  "level-up-function": [
+		{
+		  "name": "search",
+		  "params": {
+			"decks": ["room","discard"],
+			"type": "advanced-monster-room",
+			"count": 1
+		  }
+		},
+		{
+		  "name": "build",
+		  "params": {
+			"player": "self",
+			"room": "$1"
+		  }
+		}
+	  ]
+	},
+	{
+	  "name": "Draculord",
+	  "title": "Hypnotic Vampire",
+	  "image": "draculord.png",
+	  "level-up": "Target opponent reveals his or her hand to you. Take one card and put it into your hand.",
+	  "xp": 900,
+	  "treasure-types": [ "cleric" ],
+	  "level-up-function": [
+		{
+		  "name": "chooseOpponent",
+		  "params": {}
+		},
+		{
+		  "name": "takeCard",
+		  "params": {
+			"type": "any",
+			"opponent": "$1",
+			"count": 1
+		  }
+		},
+		{
+		  "name": "placeInHand",
+		  "params": {
+			"cards": "$2"
+		  }
+		}
+	  ]
+	},
+	{
+	  "name": "Gorgona",
+	  "title": "Queen of Medusia",
+	  "image": "gorgona.png",
+	  "level-up": "Choose a Hero in town. Immediately kill that Hero and place it face-down in your scorekeeping area.",
+	  "xp": 500,
+	  "treasure-types": [ "thief" ],
+	  "level-up-function": [
+		{
+		  "name": "search",
+		  "params": {
+			"decks": ["town"],
+			"type": "hero",
+			"count": 1
+		  }
+		},
+		{
+		  "name": "killHero",
+		  "params": {
+			"player": "self",
+			"hero": "$1"
+		  }
+		}
+	  ]
+	},
+	{
+	  "name": "Xyzax",
+	  "title": "Progenitor Lich",
+	  "image": "xyzax.png",
+	  "level-up": "Choose two cards from the discard pile and put them into your hand.",
+	  "xp": 750,
+	  "treasure-types": [ "cleric" ],
+	  "level-up-function": [
+		{
+		  "name": "search",
+		  "params": {
+			"decks": ["discard"],
+			"type": "any",
+			"count": 2
+		  }
+		},
+		{
+		  "name": "placeInHand",
+		  "params": {
+			"cards": "$1"
+		  }
+		}
+	  ]
+	},
+	{
+	  "name": "Robobo",
+	  "title": "Angry Golem",
+	  "image": "robobo.png",
+	  "level-up": "Each opponent must choose and destroy one Room in his or her dungeon",
+	  "xp": 400,
+	  "treasure-types": [ "fighter" ],
+	  "level-up-function": [
+		{
+		  "name": "destroy",
+		  "params": {
+			"decks": ["each-opponent-dungeon"],
+			"type": "room",
+			"count": 1
+		  }
+		}
+	  ]
+	}
+  ]
+}
